@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio de Animación</title>
+    <style>
+        /* Estilos para la barra de navegación */
+        .navbar {
+            background-color: #8a005a;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: rgb(16, 0, 162);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ffabab;
+            color: black;
+        }
+
+        /* Estilos para el cuerpo de la página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(0, 0, 0); /* Fondo blanco */
+            background-image: url('render luz de hdri del agua.jpg'); /* Imagen de fondo */
+            background-size: cover; /* Ajuste del fondo */
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            color: #000000;
+            padding-top: 60px; /* Espacio para que no se superponga el menú fijo */
+        }
+
+        /* Estilos para las secciones */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        /* Estilo para las imágenes en la sección de ilustración */
+        section img {
+            max-width: 70%; /* Tamaño máximo del 80% del ancho de su contenedor */
+            height: auto;
+            border: 3px solid #333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            margin: 10px;
+        }
+
+        /* Estilo para los videos en la sección de animación */
+        section video {
+            max-width: 30%; /* Tamaño máximo del 80% del ancho de su contenedor */
+            height: auto;
+            border: 3px solid #333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            margin: 10px;
+        }
+
+        /* Estilo de las secciones */
+        section:nth-of-type(odd) {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        section:nth-of-type(even) {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Títulos de las secciones */
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <div class="navbar">
+        <a href="#esculpidozbrush">esculpidozbrush</a>
+        <a href="#edicion Davinci resolve">Edición Davinci resolve</a>
+        <a href="#composicion digital Photoshop">composicion digital Photoshop</a>
+    </div>
+
+    <!-- Secciones -->
+    <section id="esculpidozbrush">
+        <h2>esculpidozbrush</h2>
+        <div class="image-gallery">
+            <img src="cabello corto.png" alt="esculpido 1">
+            <img src="chavadelentes.png" alt="esculpido 2">
+            <img src="chicarana.png" alt="esculpido 3">
+            <img src="miles.jpg" alt="esculpido 4">
+            <img src="niña .jpg" alt="esculpido 5">
+            <img src="POKEMON RENDER.4png.png" alt="esculpido 6">
+            <img src="rick23.png" alt="esculpido 7">
+    </section>
+
+    <section id="edicion Davinci resolve">
+        <h2>edicion Davinci resolve</h2>
+        <video controls>
+            <source src="V1_F9_16_Balam.mp4" type="video/mp4">
+        </video>
+        <video controls>
+            <source src="V2_F9_16_Balam.mp4" type="video/mp4">
+        </video>
+        <video controls>
+            <source src="v3_f9_16_balam.mp4" type="video/mp4">
+        </video>
+        <video controls>
+            <source src="v4_f9_16_balam.mp4" type="video/mp4">
+        </video>
+        <video controls>
+            <source src="donia way v7.mov" type="video/mov">
+        </video>
+    </section>
+
+    <section id="composicion digital Photoshop">
+        <h2>composicion digital Photoshop</h2>
+        <img src="ComposicionDigital1.jpg" alt="composicion 1">
+        <img src="Composiciondigital2.jpg" alt="composicion 2">
+    </section>
+
+</body>
+</html>
